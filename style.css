@@ -1,0 +1,12 @@
+*body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(image-header.png);
+}
+
+nav {
+    display: inline-block;
+}
