@@ -1,11 +1,15 @@
-*html {
+* {
     margin: 0;
     padding: 0;
 }
 
+a {
+    display: inline-block;
+}
+
 header {
     background-image: url(image-header.png);
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -13,11 +17,10 @@ header {
 
 nav {
     text-align: right;
-    padding: 30px;
+    padding: 32px 46px;
 
     img {
         float: left;
-        padding: 10px;
     }
 
     ul {
@@ -26,48 +29,59 @@ nav {
 
     .linav {
         display: inline;
-        padding: 20px;
+
     }
 
     a {
         text-decoration: none;
         color: white;
         padding: 20px;
-        font-family: DM Sans, sans-serif;
+        font-family: "DM Sans", sans-serif;
     }
 }
 
 #h_cie {
     width: 700px;
     margin: auto;
+    padding-block: 64px;
 
     h1 {
-
-        font-family: DM Sans;
-        font-size: 53px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 44px;
+        font-weight: 300;
     }
 
     H1 strong {
-        font-family: DM Sans;
-        font-size: 160px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 84px;
+        font-weight: 400;
+        line-height: 100%;
     }
 
     H2 {
-        font-family: DM Sans;
+        font-family: "DM Sans", sans-serif;
         font-size: 28px;
+        font-weight: 300;
+        margin-top: 10px;
+
+        strong {
+            font-weight: 800;
+        }
     }
+}
+
+.btn {
+    padding: 15px 30px;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 5px;
 }
 
 #boutonhero {
     text-decoration: none;
-
-    .btn {
-        padding: 15px;
-        text-decoration: none;
-        color: black;
-        background: white;
-        border-radius: 5px;
-    }
+    margin-top: 20px;
 
     .noir {
         color: white;
@@ -85,15 +99,217 @@ main {
 
     div {
         width: 700px;
+        margin: auto;
+        padding: 80px;
     }
 
     h2 {
-        font-family: DM Sans, sans-serif;
-        font-size: 36px;
+        font-family: "DM Sans", sans-serif;
+        line-height: 100%;
+        margin-bottom: 20px;
+        font-weight: 250;
+        font-size: 48px;
     }
 
     p {
-        font-family: DM Sans, sans-serif;
-        font-size: 18px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+#empty_section img {
+    width: 100%;
+}
+
+#lineup {
+    color: white;
+    width: 700px;
+    padding: 80px;
+    margin: auto;
+
+    h2 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 48px;
+        text-align: center;
+        font-weight: 400;
+        padding: 5px;
+    }
+
+    ul {
+        list-style: none;
+        font-family: "DM SANS", sans-serif;
+        font-size: 36px;
+        font-weight: 200;
+        margin-bottom: 5px;
+
+        #bordertop {
+            border-top: 1px dashed rgb(74, 73, 73);
+        }
+
+        li {
+            border-bottom: 1px dashed rgb(74, 73, 73);
+            padding: 10px;
+        }
+
+        span {
+            font-weight: 500;
+        }
+
+    }
+
+
+    .btn {
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+#sponsor {
+    background-image: url("banniere-logo.png");
+    text-align: center;
+    padding: 150px 0;
+    vertical-align: middle;
+
+    div a {
+        padding: 20px;
+    }
+}
+
+#formulaire {
+    color: white;
+    width: 700px;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+
+    H2 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 36px;
+        text-align: center;
+        font-weight: 400;
+        padding: 15px;
+    }
+
+    p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 100px;
+        text-align: left;
+
+        a {
+            color: white;
+        }
+    }
+
+    label {
+        display: block;
+        margin-top: 20px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        text-align: left;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        background-color: rgb(49, 47, 47);
+        color: white;
+    }
+
+    button {
+        margin-top: 50px;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+    #new {
+        display: inline-block;
+        width: 300px;
+        font-size: 24px;
+        font-weight: 200;
+        margin-left: 80px;
+        margin-top: 50px;
+
+        a {
+            color: white;
+        }
+    }
+
+    #new2 {
+        display: inline-block;
+        width: 400px;
+
+        #input_news {
+            background-color: white;
+            border-radius: 8px;
+            width: fit-content;
+            float: right;
+
+            input {
+                display: inline-block;
+                width: 200px;
+                padding: 10px;
+                margin-right: 0px;
+                /* border-radius: 8px; */
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border: none;
+            }
+
+            #btn_sub {
+                display: inline-block;
+                padding: 10px 20px;
+                font-family: "DM Sans", sans-serif;
+                color: white;
+                background: black;
+                border: 1px solid white;
+                /* border-radius: 8px; */
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+
+        label {
+            font-family: "DM Sans", sans-serif;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 200;
+            display: block;
+        }
+
+    }
+}
+
+#pied {
+    text-align: right;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+
+    p {
+        display: inline-block;
+        color: black;
+        padding: 10px;
+    }
+
+    #pgauche {
+        float: left;
+        margin-left: 80px;
     }
 }

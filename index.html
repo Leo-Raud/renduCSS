@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>RenduCSS Léo_Raud</title>
 </head>
 
@@ -23,7 +28,7 @@
         <section class="hero">
             <div id="h_cie">
                 <h1>URBAN NIGHT<br><strong>Rap Fest</strong></h1>
-                <h2><strong>MAI & 05 MAI</strong>
+                <h2><strong>04 MAI & 05 MAI</strong>
                     <br>LYON - PARC DE GERLAND <br>7EME
                 </h2>
                 <div id="boutonhero">
@@ -50,42 +55,35 @@
                     qu'un.</p>
             </div>
         </section>
-        <section>
+        <section id="empty_section">
             <img src="section-img.png">
         </section>
         <section>
-            <div>
+            <div id="lineup">
                 <h2>LINE UP</h2>
                 <ul>
-                    <li class="entreliste"></li>
-                    <li>04 MAI - omah Lay</li>
-                    <li class="entreliste"></li>
-                    <li>04 MAI - wizkid</li>
-                    <li class="entreliste"></li>
-                    <li>04 MAI - lil baby</li>
-                    <li class="entreliste"></li>
-                    <li>04 MAI - burna boy</li>
-                    <li class="entreliste"></li>
-                    <li>05 MAI - kpoint</li>
-                    <li class="entreliste"></li>
-                    <li>05 MAI - a.c</li>
-                    <li class="entreliste"></li>
-                    <li>05 MAI - kekra</li>
-                    <li class="entreliste"></li>
-                    <li>05 MAI - theodora</li>
-                    <li class="entreliste"></li>
+                    <li id="bordertop"><span>04 MAI</span> - omah Lay</li>
+                    <li><span>04 MAI</span> - wizkid</li>
+                    <li><span>04 MAI</span> - lil baby</li>
+                    <li><span>04 MAI</span> - burna boy</li>
+                    <li><span>05 MAI</span> - kpoint</li>
+                    <li><span>05 MAI</span> - a.c</li>
+                    <li><span>05 MAI</span> - kekra</li>
+                    <li><span>05 MAI</span> - theodora</li>
                 </ul>
-                <a href="">Billeterie</a>
+                <a class="btn" href="">Billeterie</a>
             </div>
         </section>
         <section id="sponsor">
-            <a href=""><img src="spotify.png"></a>
-            <a href=""><img src="applemusic.png"></a>
-            <a href=""><img src="uber.png"></a>
-            <a href=""><img src="deezer.png"></a>
-            <a href=""><img src="motorola.png"></a>
+            <div id="logo_sponsor">
+                <a href=""><img src="spotify.png"></a>
+                <a href=""><img src="applemusic.png"></a>
+                <a href=""><img src="uber.png"></a>
+                <a href=""><img src="deezer.png"></a>
+                <a href=""><img src="motorola.png"></a>
+            </div>
         </section>
-        <section>
+        <section id="formulaire">
             <h2>CONTACTEZ NOUS</h2>
             <p>Fill out the booking form below to ask any questions, or reach out to us directly at
                 <a href="help@raptureclouds.com">help@raptureclouds.com</a> with any questions or concerns.
@@ -108,26 +106,29 @@
                     <textarea name="" id="" type="Message" placeholder="Message"></textarea>
                 </div>
             </form>
-            <button>Contact</button>
+            <button class="btn">Contact</button>
         </section>
     </main>
     <footer>
-        <div>
+        <div id="new">
             <p>Email</p>
             <a href="help@raptureclouds.com">help@raptureclouds.com</a>
         </div>
 
-        <div>
-            <form action="">
+        <div id="new2">
+            <form>
                 <label>NewsLetter</label>
-                <input type="email" placeholder="Enter your email">
+                <div id="input_news">
+                    <input type="email" placeholder="Enter your email" a>
+                    <button id="btn_sub">Subscribe</button>
+                </div>
             </form>
         </div>
-        <div>
-            <p>Copyright © 2025 • Rapture - Music Festival</p>
-            <p>Terms & Conditions for Event • Privacy Policy • Terms of Use</p>
-        </div>
     </footer>
+    <div id="pied">
+        <p id="pgauche">Copyright © 2025 • Rapture - Music Festival</p>
+        <p>Terms & Conditions for Event • Privacy Policy • Terms of Use</p>
+    </div>
 </body>
 
 </html>
